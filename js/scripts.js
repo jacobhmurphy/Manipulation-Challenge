@@ -20,7 +20,9 @@ document.getElementsByTagName("ul").className = "list"
 // 5: Create a new list item and add it to the <ul>
 
 var newListItem = document.createElement("LI")
-var itemText = document.createTextNode("Coca-Cola")
+var newInput = document.createElement("input")
+newListItem.appendChild(newInput)
+var itemText = document.createTextNode(" Coca-Cola")
 newListItem.appendChild(itemText)
 var ul = document.querySelector("ul")
 ul.appendChild(newListItem)
